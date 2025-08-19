@@ -52,6 +52,75 @@
   --contrast-color: #ffffff;
 }
 
+/* Dark Theme Support */
+.dark-theme {
+  --background-color: #fff;
+  --surface-color: #fff;
+  --default-color: #222;
+  --heading-color: #222;
+  --accent-color: #34b7a7;
+  --contrast-color: #fff;
+}
+
+.dark-theme body,
+.dark-theme .main,
+.dark-theme .section,
+.dark-theme .footer,
+.dark-theme .header {
+  background: var(--background-color) !important;
+  color: var(--default-color) !important;
+}
+
+.dark-theme .section-title h2,
+.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
+  color: var(--heading-color) !important;
+}
+
+.dark-theme .footer {
+  background: var(--surface-color) !important;
+  color: var(--default-color) !important;
+}
+
+.dark-theme .header {
+  background: var(--surface-color) !important;
+  color: var(--default-color) !important;
+}
+
+.dark-theme .card, .dark-theme .portfolio-info, .dark-theme .info-wrap, .dark-theme .progress-bar-wrap {
+  background: var(--surface-color) !important;
+  color: var(--default-color) !important;
+  border-color: #ccc !important;
+}
+
+.dark-theme a, .dark-theme a:visited {
+  color: var(--accent-color);
+}
+
+.dark-theme .btn, .dark-theme .btn-get-started {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.dark-theme .btn:hover, .dark-theme .btn-get-started:hover {
+  background: #249b8a;
+  color: #fff;
+}
+
+.dark-theme input, .dark-theme textarea, .dark-theme select, .dark-theme .form-control {
+  background: #fff;
+  color: #222;
+  border-color: #ccc;
+}
+
+.dark-theme .php-email-form .error-message,
+.dark-theme .php-email-form .sent-message,
+.dark-theme .php-email-form .loading {
+  background: #fff;
+  color: #222;
+  border-color: #ccc;
+}
+}
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
